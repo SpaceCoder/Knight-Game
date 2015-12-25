@@ -76,6 +76,9 @@
                                     <constraint firstAttribute="height" constant="183" id="Cpj-4D-bji"/>
                                 </constraints>
                                 <state key="normal" image="chest"/>
+                                <connections>
+                                    <action selector="ChestBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="56E-QB-0eQ"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="C4d-1D-WeH" userLabel="Player">
                                 <rect key="frame" x="20" y="331" width="166" height="221"/>
@@ -104,6 +107,9 @@
                                         <exclude reference="k5f-zl-5xq"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="AttackBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vzT-wN-crW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -139,6 +145,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="ChestImg" destination="Xpn-6x-kxO" id="BAA-9J-YR1"/>
+                        <outlet property="EnemyHP" destination="UY7-tn-qGQ" id="jOc-PB-4ZR"/>
+                        <outlet property="EnemyImg" destination="gpm-kF-B1Y" id="c1o-iF-uxu"/>
+                        <outlet property="PlayerHP" destination="lvQ-EG-9EJ" id="6cY-0v-x3O"/>
+                        <outlet property="PrintScreen" destination="TU8-QM-qie" id="wOX-HB-c8f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
